@@ -1,3 +1,4 @@
+
 package com.wecp.progressive.service;
 
 import com.wecp.progressive.entity.Product;
@@ -17,7 +18,6 @@ public interface ProductService {
 
     void deleteProduct(int productId) throws SQLException;
 
-    //Do not implement these methods in ProductServiceImplJdbc.java class
     public default List<Product> getAllProductByWarehouse(int warehouseId) {
         return null;
     }
