@@ -60,5 +60,5 @@ public class ProductServiceImplJpa implements ProductService  {
     public List<Product> getAllProductByWarehouse(int warehouseId) {
         return productRepository.findAllByWarehouse_WarehouseId(warehouseId);
     }
-
+ 
 }
