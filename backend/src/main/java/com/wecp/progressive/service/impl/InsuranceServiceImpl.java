@@ -1,3 +1,4 @@
+
 package com.wecp.progressive.service.impl;
 
 import java.util.List;
@@ -30,7 +31,7 @@ public class InsuranceServiceImpl implements InsuranceService  {
     @Override
     public Insurance getInsuranceById(int insuranceId) {
         // TODO Auto-generated method stub
-        return insuranceRepository.findById(insuranceId).get();
+        return insuranceRepository.findById(insuranceId).orElse(null);
     }
 
     @Override
