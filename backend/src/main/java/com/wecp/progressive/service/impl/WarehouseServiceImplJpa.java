@@ -70,6 +70,6 @@ public class WarehouseServiceImplJpa implements WarehouseService {
         if (warehouseList.isEmpty()) {
             throw new NoWarehouseFoundForSupplierException("Cannot find warehouse by this supplier id");
         }
-        return warehouseList;
+        return warehouseList; 
     }
 }
