@@ -34,7 +34,7 @@ public class ProductServiceImplJpa implements ProductService  {
 
     @Override
     public Product getProductById(int productId) {
-        return productRepository.findById(productId).get();
+        return productRepository.findByProductId(productId);
     }
 
     @Override
