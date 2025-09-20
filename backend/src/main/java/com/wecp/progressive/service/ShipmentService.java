@@ -1,4 +1,3 @@
-
 package com.wecp.progressive.service;
 
 import com.wecp.progressive.entity.Shipment;
@@ -11,7 +10,7 @@ public interface ShipmentService {
 
     Shipment getShipmentById(int shipmentId) throws SQLException;
 
-    int addShipment(Shipment shipment)throws SQLException;
+    int addShipment(Shipment shipment) throws SQLException;
 
     void updateShipment(Shipment shipment) throws SQLException;
 
